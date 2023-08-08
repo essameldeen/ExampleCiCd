@@ -1,6 +1,6 @@
- version:2.1
- jobs:
-   try-job:
+  version: 2.1
+  jobs:
+    try-job:
       macos:
         xcode:14.0.1
        steps:
