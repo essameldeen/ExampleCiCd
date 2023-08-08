@@ -9,5 +9,5 @@
 
   workflows:
     try-workflow:
-       jobs:
-         - try-job
+      jobs:
+        - try-job
