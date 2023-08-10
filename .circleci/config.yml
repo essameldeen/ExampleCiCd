@@ -6,9 +6,9 @@ jobs:
       - image: circleci/android:api-30-node
     steps:
       - checkout
-      - run: yarn beta
+      - run: bash scripts/beta.sh
 
 workflows:
-  beta-android:
+  beta:
     jobs:
       - beta-android
