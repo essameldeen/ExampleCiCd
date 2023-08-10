@@ -1,13 +1,14 @@
 version: 2.1
 
 jobs:
-  try-job:
-    macos:
-      xcode: "14.0.1"
+  beta-android:
+    docker:
+      - image: circleci/android:api-30-node
     steps:
-      - run: echo "I am a job named essam Mohamed within workflow named try-workflow"
+      - checkout
+      - run: yarn beta
 
 workflows:
-  try-workflow:
+  beta:
     jobs:
-      - try-job
+      - beta-android
